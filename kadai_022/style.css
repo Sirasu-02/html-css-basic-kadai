@@ -1,0 +1,93 @@
+.body {
+  margin: 0px;
+}
+
+.head{
+  margin: 0px;
+  margin-bottom: 20px;
+  text-align:  center;
+  background-color: rgb(244, 79, 79);
+
+}
+
+.head>h1 {
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  margin: 10px;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contents {
+  padding: 10px 15px;
+  margin: 20px 0px;
+  text-align: center;
+  border: solid 3px rgb(238, 204, 204);
+  flex-basis: 25%;
+}
+
+
+.address {
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+
+.address::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+.contents .text:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+
+.text {
+  margin: 0px;
+  font-size: 20px;
+}
+
+.caption {
+  margin:  10px 0px;
+  width: 70%;
+}
+
+.footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+.navigation{
+  font-size: 20px;
+  color: rgb(255, 255, 255);  
+}
+
+.navigation:visited {
+  color: rgb(193, 234, 251);
+}
+
+.navigation:hover {
+  color: rgb(245, 178, 168);
+}
+
+@media screen and (max-width: 768px) {
+  #parent {
+    display: block;
+    align-items: center;
+  }
+
+  .address {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 25px;
+  }
+}
